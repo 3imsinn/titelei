@@ -1,0 +1,60 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Epub</h1>
+
+<f:flashMessages renderMode="div" />
+
+<table  class="tx_titelei" >
+	<tr>
+		<th><f:translate key="tx_titelei_domain_model_titel.title" /></th>
+		<th><f:translate key="tx_titelei_domain_model_titel.description" /></th>
+		<th><f:translate key="tx_titelei_domain_model_titel.language" /></th>
+		<th><f:translate key="tx_titelei_domain_model_titel.author" /></th>
+		<th><f:translate key="tx_titelei_domain_model_titel.publisher" /></th>
+		<th><f:translate key="tx_titelei_domain_model_titel.copyrights" /></th>
+		<th><f:translate key="tx_titelei_domain_model_titel.tags" /></th>
+		<th><f:translate key="tx_titelei_domain_model_titel.callEpub" /></th>
+	
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{titels}" as="titel">
+	<f:debug title="debug">{titel}</f:debug>
+
+		<tr>
+			<td><f:link.action action="show" arguments="{titel : titel}"> {titel.title}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{titel : titel}"> {titel.description}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{titel : titel}"> {titel.language}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{titel : titel}"> {titel.author}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{titel : titel}"> {titel.publisher}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{titel : titel}"> {titel.copyrights}</f:link.action></td>
+
+			<f:for each="{titel.content}" as="chapter">
+				{chapter.title}
+			</f:for>
+	
+			<td><f:link.action action="show" arguments="{titel : titel}"> {titel.content.title}</f:link.action></td>
+			<td><f:link.action action="epub" arguments="{titel : titel}"> call Epub</f:link.action></td>
+			
+			<td><f:link.action action="edit" arguments="{titel : titel}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{titel : titel}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Titel</f:link.action>
+</f:section>

@@ -1,0 +1,15 @@
+
+plugin.tx_titelei {
+	view {
+		# cat=plugin.tx_titelei/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:titelei/Resources/Private/Templates/
+		# cat=plugin.tx_titelei/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:titelei/Resources/Private/Partials/
+		# cat=plugin.tx_titelei/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:titelei/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_titelei//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

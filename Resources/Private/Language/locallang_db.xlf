@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-08-31T08:55:50Z" product-name="titelei">
+		<header/>
+		<body>
+			<trans-unit id="tx_titelei_domain_model_titel">
+				<source>Titel</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_titel.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_titel.isbn">
+				<source>ISBN</source>
+			</trans-unit>			
+			<trans-unit id="tx_titelei_domain_model_titel.cover">
+				<source>Cover</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_titel.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_titel.language">
+				<source>Language</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_titel.author">
+				<source>Author</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_titel.publisher">
+				<source>Publisher</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_titel.copyrights">
+				<source>Copyrights</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_titel.tags">
+				<source>Tags</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_titel.content">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_chapter">
+				<source>Chapter</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_chapter.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_titelei_domain_model_chapter.text">
+				<source>Text</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
